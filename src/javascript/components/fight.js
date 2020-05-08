@@ -13,6 +13,9 @@ export async function fight(firstFighter, secondFighter) {
 
 export function getDamage(attacker, defender) {
   // return damage
+  const hitPower = getHitPower(attacker);
+  const blockPower = getBlockPower(defender);
+  return blockPower > hitPower ? 0 : hitPower - blockPower;
 }
 
 export function getHitPower(fighter) {
