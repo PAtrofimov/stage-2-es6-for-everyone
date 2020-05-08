@@ -8,6 +8,22 @@ export function createFighterPreview(fighter, position) {
   });
 
   // todo: show fighter info (image, name, health, etc.)
+  const {name, health, attack, defense} = fighter;
+
+  const fighterImage = createFighterImage(fighter);
+  const fighterProps = createElement({
+    tagName: 'div',
+    className: `fighter-props`,
+  });
+  fighterProps.innerHTML = `
+  <p>name: <span>${name}</span></p>
+  <p>health: <span>${health}</span></p>
+  <p>attack: <span>${attack}</span></p>
+  <p>defense: <span>${defense}</span></p>
+  `;
+
+  fighterElement.append(fighterImage, fighterProps);
+  
 
   return fighterElement;
 }
