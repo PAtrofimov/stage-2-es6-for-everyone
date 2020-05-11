@@ -1,9 +1,13 @@
-export async function fight(firstFighter, secondFighter, controls) {
+import {controls} from '../../constants/controls';
+
+export async function fight(firstFighter, secondFighter) {
   return new Promise((resolve) => {
     // resolve the promise with the winner when fight is over
 
     const healthBarFirst = document.getElementById('left-fighter-indicator');
     const healthBarSecond = document.getElementById('right-fighter-indicator');
+
+   // const controls = window.AllControls;
 
     healthBarFirst.style.width = '100%';
     healthBarSecond.style.width = '100%';
