@@ -8,9 +8,9 @@ export function createFighterPreview(fighter, position) {
   });
 
   // todo: show fighter info (image, name, health, etc.)
-  
+
   if (!fighter) {
-    throw new Error("Select second player");
+    throw new Error('Select second player');
   }
 
   const { name, health, attack, defense } = fighter;
@@ -19,25 +19,24 @@ export function createFighterPreview(fighter, position) {
     tagName: 'div',
     className: `fighter-props`,
   });
-  fighterProps.innerHTML = `
-  <p>name: <span>${name}</span></p>
-  <p>health: <span>${health}</span></p>
-  <p>attack: <span>${attack}</span></p>
-  <p>defense: <span>${defense}</span></p>
-  `;
 
+  fighterProps.innerHTML = `
+  <h1 class = 'fighter-name fighter-name-${position}'>${name}</h1>
+  <div>health: <span class = 'fighter-prop fighter-health'>${health}</span></div>
+  <div>attack: <span class = 'fighter-prop fighter-attack'>${attack}</span></div>
+  <div>defense: <span class = 'fighter-prop fighter-defense'>${defense}</span></div>
+  `;
   fighterElement.append(fighterImage, fighterProps);
-  
 
   return fighterElement;
 }
 
 export function createFighterImage(fighter) {
   const { source, name } = fighter;
-  const attributes = { 
-    src: source, 
+  const attributes = {
+    src: source,
     title: name,
-    alt: name 
+    alt: name,
   };
   const imgElement = createElement({
     tagName: 'img',

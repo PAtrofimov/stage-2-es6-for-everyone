@@ -11,3 +11,41 @@
 .fighter-preview___left {
   align-items: flex-start;
 }
+.fighter-props {
+  font-weight: 600;
+  font-family: fantasy;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+  letter-spacing: .3rem;
+  word-spacing: .3rem;
+  min-height: 20rem;
+}
+
+.fighter-name {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: xx-large;
+}
+
+.fighter-name-left {
+  color: hsl(347, 100%, 50%);
+}
+
+.fighter-name-right {
+  color: hsl(266, 100%, 50%);
+}
+
+.fighter-health {
+  color: hsl(120, 100%, 50%);
+}
+
+.fighter-attack {
+  color: hsl(0, 100%, 50%);
+}
+
+.fighter-defense {
+  color: hsl(20, 100%, 20%);
+}
+.fighter-prop {
+  font-size: 2rem;
+  font-weight: bolder;
+}
