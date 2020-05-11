@@ -13,8 +13,8 @@
 .modal-root {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, .2);
-  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: lightsteelblue;
 }
 
 .modal-header {
@@ -26,10 +26,21 @@
   border-bottom: 1px solid #e9ecef;
   font-weight: 700;
   font-size: 22px;
+
+  letter-spacing: 0.5rem;
+  font-style: italic;
+  font-weight: bolder;
+  color: blue;
+  background-color: lavender;
 }
 
 .modal-body {
   padding: 1rem;
+
+  background-color: lightsteelblue;
+  color: black;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .close-btn {
