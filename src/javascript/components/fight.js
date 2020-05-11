@@ -7,8 +7,6 @@ export async function fight(firstFighter, secondFighter) {
     const healthBarFirst = document.getElementById('left-fighter-indicator');
     const healthBarSecond = document.getElementById('right-fighter-indicator');
 
-   // const controls = window.AllControls;
-
     healthBarFirst.style.width = '100%';
     healthBarSecond.style.width = '100%';
 
