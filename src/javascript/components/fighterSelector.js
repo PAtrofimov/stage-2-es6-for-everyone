@@ -13,8 +13,11 @@ export function createFightersSelector() {
     const firstFighter = playerOne ?? fighter;
     const secondFighter = Boolean(playerOne) ? playerTwo ?? fighter : playerTwo;
     selectedFighters = [firstFighter, secondFighter];
-
-    renderSelectedFighters(selectedFighters);
+    try {
+      renderSelectedFighters(selectedFighters);
+    } catch (error) {
+      console.warn("Please, select second fighter!");
+    }
   };
 }
 

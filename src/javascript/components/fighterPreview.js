@@ -8,8 +8,12 @@ export function createFighterPreview(fighter, position) {
   });
 
   // todo: show fighter info (image, name, health, etc.)
-  const {name, health, attack, defense} = fighter;
+  
+  if (!fighter) {
+    throw new Error("Select second player");
+  }
 
+  const { name, health, attack, defense } = fighter;
   const fighterImage = createFighterImage(fighter);
   const fighterProps = createElement({
     tagName: 'div',
