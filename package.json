@@ -2,6 +2,7 @@
   "name": "street-fighter",
   "version": "1.0.0",
   "description": "",
+  "homepage": "http://patrofimov.github.io/stage-2-es6-for-everyone",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
